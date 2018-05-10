@@ -1,0 +1,43 @@
+import random #import random function
+input('Press any key to roll your Dice:')
+color=['Red','Blue','Green','yellow','Pink','Black'] #declaring list of 6 colors of 6 sides.
+op=random.randrange(1,7) #selecting random number from 1 to 6
+op1=random.choice(color) #selecting random color from color list
+ 
+print("Your Dice is",op1,"colour with number",op) #printing the output.
+
+
+from turtle import *
+screen = Screen()
+screen.setup(400, 400)
+screen.bgcolor("#A7E30E")
+color("#FA057F")
+style = ('Arial', 40, 'bold')
+
+
+if op == 1:
+  write("1", font = style, align = "center")
+  hideturtle()
+
+elif op == 2:
+  write("2", font = style, align = "center")
+  hideturtle()
+  
+elif op == 3:
+  write("3", font = style, align = "center")
+  hideturtle()
+  
+elif op == 1:
+  write("4", font = style, align = "center")
+  hideturtle()
+  
+elif op == 1:
+  write("5", font = style, align = "center")
+  hideturtle()
+  
+elif op == 1:
+  write("6", font = style, align = "center")
+  hideturtle()
+  
+else:
+  pass
